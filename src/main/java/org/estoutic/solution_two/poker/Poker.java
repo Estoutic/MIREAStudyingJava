@@ -13,10 +13,14 @@ public class Poker {
         int numberOfPlayers = scanner.nextInt();
 
         if (numberOfPlayers < 1) {
-            System.out.println("Players count mus be > 0 ");
+            System.out.println("Players count must be > 0 ");
             return;
-        }
+        } else if (numberOfPlayers > 10) {
 
+            System.out.println("Players count must be < 10 ");
+            return;
+
+        }
         List<String> deck = createDeck();
         shuffleDeck(deck);
 
@@ -35,7 +39,7 @@ public class Poker {
 
         for (String suit : suits) {
             for (String rank : ranks) {
-                deck.add(rank + suit);
+                deck.add(rank + " " + suit);
             }
         }
 
