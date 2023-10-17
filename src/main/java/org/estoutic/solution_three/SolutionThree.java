@@ -81,3 +81,21 @@ public class SolutionThree {
         }
     }
 }
+
+
+        /*
+        Таблица 3.2 Методы классов оболочек
+                     Boolean Byte Character Double Float Integer Long Short isStatic
+        byteValue      x        x          x      x       x          x         x        x
+        doubleValue    x        x           x      x               x          x        x
+        floatValue     x        x                    x          x               x
+        intValue       x        x           x      x                x          x        x
+        longValue      x        x           x      x                x          x        x
+        shortValue     x               x           x                x
+        parseXxx                x                             x
+        parseXxx with radix                 x
+        valueOf                     x                           x
+        toString             x        x          x        x         x          x        x
+        toString(primitive)        x                           x
+        toString(primitive, radix)                     x
+*/
